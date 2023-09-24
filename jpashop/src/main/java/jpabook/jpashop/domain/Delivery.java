@@ -12,7 +12,7 @@ public class Delivery {
     @Column(name = "delivery_id")
     private Long id;
 
-    @OneToOne(mappedBy = "delivery") // Order.delivery와 매핑
+    @OneToOne(mappedBy = "delivery", fetch = FetchType.LAZY) // Order.delivery와 매핑
     private Order order;
 
     private Address address;
