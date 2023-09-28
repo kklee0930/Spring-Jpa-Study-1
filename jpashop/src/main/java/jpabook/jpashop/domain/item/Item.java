@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jpabook.jpashop.domain.Category;
 import jpabook.jpashop.exception.NotEnoughStockException;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 // 상속관계 매핑 전략을 지정한다. SINGLE_TABLE은 한 테이블에 다 때려박는 전략이다.
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "dtype")
-@Getter
+@Getter @Setter
 public class Item {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
