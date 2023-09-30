@@ -37,6 +37,7 @@ dependencies {
 
 	//쿼리 파라미터 로그 남겨주는 p6spy(성능을 저하시킬 수도 있기 때문에 사용할 때 고민해보기)
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.7.1'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 tasks.named('test') {
