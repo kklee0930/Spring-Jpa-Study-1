@@ -77,7 +77,7 @@ public class ItemController {
 
 //        itemService.saveItem(book);
 
-        // Dirty Checking을 이용한 변경감지 기능을 통한 업데이트
+        // Dirty Checking을 이용한 변경감지 기능을 통한 업데이트.
         itemService.updateItem(itemId, form.getName(), form.getPrice(), form.getStockQuantity());
         return "redirect:/items";
     }
