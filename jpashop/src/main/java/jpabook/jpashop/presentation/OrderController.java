@@ -41,6 +41,6 @@ public class OrderController {
 
         // Controller에서는 식별자만 넘기고, 서비스 계층에서 실제 엔티티를 조회한다.
         orderService.order(memberId, itemId, count);
-        return "redirect:/orders"; // 주문 목록으로 리다이렉트
+        return "redirect:/orders"; // 주문 목록으로 리다이렉트.
     }
 }
