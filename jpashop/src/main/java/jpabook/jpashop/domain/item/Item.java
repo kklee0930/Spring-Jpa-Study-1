@@ -50,4 +50,13 @@ public class Item {
         }
         this.stockQuantity = restStock;
     }
+
+    /**
+     * stock 정보 수정
+     */
+    public void change(int price, String name, int stockQuantity) {
+        this.price = price;
+        this.name = name;
+        this.stockQuantity = stockQuantity;
+    }
 }
